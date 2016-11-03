@@ -138,8 +138,7 @@ class syntax_plugin_publistx extends DokuWiki_Syntax_Plugin {
             $renderer->doc .= $data['error'];
         }
 
-        # We should not do this... especially for large publists
-        #$renderer->info['cache'] = false;
+        $renderer->info['cache'] = false;
 
         return true;
     }
@@ -166,4 +165,4 @@ class syntax_plugin_publistx extends DokuWiki_Syntax_Plugin {
     }
 }
 
-// vim:ts=4:sw=4:et:enc=utf-8:
+// vim:ts=4:sw=4:enc=utf-8:et
