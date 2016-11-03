@@ -15,7 +15,7 @@ if (!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 
 require_once DOKU_PLUGIN.'syntax.php';
 
-class syntax_plugin_publistx extends DokuWiki_Syntax_Plugin {
+class syntax_plugin_publistf extends DokuWiki_Syntax_Plugin {
     function getType() {
         return 'substition';
     }
@@ -29,7 +29,7 @@ class syntax_plugin_publistx extends DokuWiki_Syntax_Plugin {
     }
 
     function connectTo($mode) {
-        $this->Lexer->addSpecialPattern('\[publist\|.+?\]',$mode,'plugin_publistx');
+        $this->Lexer->addSpecialPattern('\[publist\|.+?\]',$mode,'plugin_publistf');
     }
 
     function handle($match, $state, $pos, &$handler){
@@ -138,7 +138,8 @@ class syntax_plugin_publistx extends DokuWiki_Syntax_Plugin {
             $renderer->doc .= $data['error'];
         }
 
-        $renderer->info['cache'] = false;
+        # We should not do this... especially for large publists
+        #$renderer->info['cache'] = false;
 
         return true;
     }
