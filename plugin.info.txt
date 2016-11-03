@@ -1,7 +1,7 @@
-base   publistx
-author Raphael Reitzig, Jorge Juan, Karl Moritz Hermann
-email  jjchico@gmail.com
-date   2014-09-25
-name   publistX plugin
+base   publistf
+author Hans-Nikolai Viessmann, Raphael Reitzig, Jorge Juan, Karl Moritz Hermann
+email  hv15@hw.ac.uk
+date   2016-11-03
+name   publistF plugin
 desc   Simple modification of original publist plugin
-url    http://www.dokuwiki.org/plugin:publistx
+url    http://www.dokuwiki.org/plugin:publistf
