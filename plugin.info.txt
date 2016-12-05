@@ -1,7 +1,7 @@
 base   publistf
 author Hans-Nikolai Viessmann, Raphael Reitzig, Jorge Juan, Karl Moritz Hermann
 email  hv15@hw.ac.uk
-date   2016-11-03
+date   2016-12-05
 name   publistF plugin
-desc   Simple modification of original publist plugin
+desc   A modified version of publist/publistx plugin that does caching and allows for variable passing to the template
 url    http://www.dokuwiki.org/plugin:publistf

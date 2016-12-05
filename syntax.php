@@ -4,6 +4,7 @@
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author  Raphael Reitzig <code@verrech.net>
+ * @author  Hans-Nikolai Viessmann <hv15@hw.ac.uk>
  */
 
 // must be run within Dokuwiki
@@ -166,4 +167,4 @@ class syntax_plugin_publistf extends DokuWiki_Syntax_Plugin {
     }
 }
 
-// vim:ts=4:sw=4:enc=utf-8:et
+// vim:ts=4:sw=4:et

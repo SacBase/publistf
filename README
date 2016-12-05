@@ -1,9 +1,9 @@
-publist Plugin for DokuWiki
+publistf Plugin for DokuWiki
 
 Includes the content of BibTeX files in DokuWiki pages in a flexible way.
 
 All documentation for this plugin can be found at
-https://www.dokuwiki.org/plugin:publist
+https://www.dokuwiki.org/plugin:publistf
 
 Additionally, use parameter author:page:authorpage if you want links to
 websites of coauthors added automatically to the bibtex entries. The
@@ -22,5 +22,6 @@ on how to install plugins in DokuWiki.
 ----
 Copyright (C) 2010 Raphael Reitzig <code@verrech.net>
 Copyright (C) 2013 Jorge Juan <jjchico@gmail.com>
+Copyright (C) 2016 Hans-Nikolai Viessmann <hv15@hw.ac.uk>
 
 See COPYING and file headers for license info.

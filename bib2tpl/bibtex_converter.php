@@ -1,6 +1,7 @@
 <?php
 /*
  * By Raphael Reitzig, 2012
+ * Edited by Hans-Nikolai Viessmann, 2016
  * version 2.0
  * code@verrech.net
  * http://lmazy.verrech.net
@@ -39,6 +40,7 @@ require_once('helper.inc.php');
  * for documentation.
  *
  * @author Raphael Reitzig
+ * @author Hans-Nikolai Viessmann <hv15@hw.ac.uk>
  * @version 2.0
  */
 class BibtexConverter {
@@ -58,6 +60,7 @@ class BibtexConverter {
    *   sort_by => (DATE|$field)
    *   order => (asc|desc)
    *   lang => xy (where lang/xy.php exists)
+   *   key => string (exposed in template at global-scope)
    * @access private
    * @var array
    */
@@ -109,7 +112,8 @@ class BibtexConverter {
       'order_groups' => 'desc',
       'sort_by' => 'DATE',
       'order' => 'desc',
-      'lang' => 'en'
+      'lang' => 'en',
+      'key' => ''
     );
 
     // lame replacement for non-constant default parameter
@@ -355,8 +359,8 @@ class BibtexConverter {
     $result = $template;
 
     // Replace global values
-    $result = preg_replace(array('/@globalcount@/', '/@globalgroupcount@/'),
-                           array(Helper::lcount($data, 2), count($data)),
+    $result = preg_replace(array('/@globalcount@/', '/@globalgroupcount@/', '/@globalkey@/'),
+                           array(Helper::lcount($data, 2), count($data), $this->options['key']),
                            $result);
 
     if ( $this->options['group'] !== 'none' ) {
