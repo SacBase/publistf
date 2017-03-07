@@ -459,7 +459,8 @@ class BibtexConverter {
         $value = $entry['niceauthor'];
         $value = $this->authorlink($value);
       }
-      if ( $key == 'bibtex') {
+      // Don't sanitize values associated with bibtex or url keys 
+      if ( $key == 'bibtex' || $key == 'url') {
         $patterns []= '/@'.$key.'@/';
         $replacements []= $value;
       }
