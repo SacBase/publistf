@@ -4,6 +4,7 @@
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author  Jorge Juan <jjchico@gmail.com>
+ * @author  Hans-Nikolai Viessmann <hans AT viess.mn>
  */
 
 // Simple latex to utf8 sanitiser. Extend as needed.
@@ -15,20 +16,20 @@ $sanitiser = function ($inputstr) {
     $search_array = array(
         '\$', '\&', '\%', '\#', '\_', '\{', '\}',   // specials
         '{', '}',                                   // emphasizers
-        "\'a", "\'e", "\'i", "\'o", "\'u",		// acute
+        "\'a", "\'e", "\'i", "\'o", "\'u",      // acute
         "\'A", "\'E", "\'I", "\'O", "\'U",
-        '\`a', '\`e', '\`i', '\`o', '\`u',		// grave
+        '\`a', '\`e', '\`i', '\`o', '\`u',      // grave
         '\`A', '\`E', '\`I', '\`O', '\`U',
-        '\^a', '\^e', '\^i', '\^o', '\^u',		// circumflex
+        '\^a', '\^e', '\^i', '\^o', '\^u',      // circumflex
         '\^A', '\^E', '\^I', '\^O', '\^U',
-        '\"a', '\"e', '\"i', '\"o', '\"u',		// umlaut
+        '\"a', '\"e', '\"i', '\"o', '\"u',      // umlaut
         '\"A', '\"E', '\"I', '\"O', '\"U',
         '\vc', '\vs',
         "\'y",
-        '\~n',						// tilde
-        '\~N',
+        '\~a', '\~A', '\~i', '\~I', '\~n',      // tilde
+        '\~N', '\~o', '\~O', '\~u', '\~U',
         '\cc', '\cC',
-        '~', '\,', '\\'				        // space
+        '~', '\,', '\\'                         // space
     );
     $replace_array = array(
         '$', '&', '%', '#', '_', '<html>&#123;</html>', '<html>&#125;</html>',
@@ -43,8 +44,9 @@ $sanitiser = function ($inputstr) {
         'Ä', 'Ë', 'Ï', 'Ö', 'Ü',
         'č', 'š',
         'ý',
-        'ñ',
-        'Ñ',
+        'ã', 'Ã', 'ẽ', 'Ẽ', 'ĩ',
+        'Ĩ', 'ñ', 'Ñ', 'õ', 'Õ',
+        'ũ', 'Ũ',
         'ç', 'Ç',
         "\xC2\xA0", ' ', ' '
     );

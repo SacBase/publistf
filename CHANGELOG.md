@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2019-10-08
+### Added
+  * extended sanitizer to include more 'tilda' characters
+
+### Changed
+  * updated dokuwiki meta file
+
 ## [1.0.0] - 2019-10-08
 ### Changed
   * changed version number and changelog format for project (the existing changelog
@@ -35,7 +42,8 @@ _Versions beyond this point do not exist within the Git History!_
     now in most cases.
   * Added/updated administrative files: COPYING, etc.
 
-[Unreleased]: https://github.com/SacBase/publistf/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/SacBase/publistf/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/SacBase/publistf/compare/1.0.0..1.1.0
 [1.0.0]: https://github.com/SacBase/publistf/releases/tag/1.0.0
 [0.1.1]: #
 [0.1.0]: #
