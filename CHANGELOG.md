@@ -1,0 +1,37 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+### Changed
+  * changed version number and changelog format for project (the existing changelog
+    details are potentially incomplete.
+  * reformated README
+
+## [1.1.0] - 2013-03-22
+### Added
+  * minor bugfixes for
+  * added a new optional parameter "authors", which allows linking to websites of
+    co-authors by creating an additional file/wiki page with "URL Author Name"
+    entries
+
+ -- Karl Moritz Hermann <mail@karlmoritz.com>
+## [1.0.0] - 2013-03-12
+### Added
+  * bib2tpl updated to v2 with additional modifications (see changelog in
+    bib2tpl folder).
+  * Included simple (optional) TeX to utf8 sanitiser in syntax.php.
+  * Included Spanish (es) language file.
+  * "handle" function (syntax.php) parser code corrections. "only" option
+    not correctly parsed when using a single condition. E.g. "only:a=b" would
+    yield 'only' => 'a=b' instead of 'only' => ['a' => 'b'].
+  * Language option: set default from "translation" plugin (if installed &
+    enabled) or global language configuration. "lang:xx" option is not needed
+    now in most cases.
+  * Added/updated administrative files: COPYING, etc.
+
+[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.0...HEAD
+[1.0.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v1.0.0

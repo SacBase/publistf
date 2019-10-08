@@ -1,4 +1,5 @@
 publistf Plugin for DokuWiki
+============================
 
 Includes the content of BibTeX files in DokuWiki pages in a flexible way.
 
@@ -19,9 +20,10 @@ will not work!
 Please refer to https://www.dokuwiki.org/plugins for additional info
 on how to install plugins in DokuWiki.
 
-----
-Copyright (C) 2010 Raphael Reitzig <code@verrech.net>
-Copyright (C) 2013 Jorge Juan <jjchico@gmail.com>
-Copyright (C) 2016 Hans-Nikolai Viessmann <hv15@hw.ac.uk>
+### Copyright and License
+
+Copyright (C) 2010      Raphael Reitzig <code@verrech.net>
+Copyright (C) 2013      Jorge Juan <jjchico@gmail.com>
+Copyright (C) 2016-2019 Hans-Nikolai Viessmann <hans AT viess.mn>
 
 See COPYING and file headers for license info.
