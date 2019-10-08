@@ -10,15 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     details are potentially incomplete.
   * reformated README
 
-## [1.1.0] - 2013-03-22
+_Versions beyond this point do not exist within the Git History!_
+
+## [0.1.1] - 2013-03-22
 ### Added
   * minor bugfixes for
   * added a new optional parameter "authors", which allows linking to websites of
     co-authors by creating an additional file/wiki page with "URL Author Name"
     entries
 
- -- Karl Moritz Hermann <mail@karlmoritz.com>
-## [1.0.0] - 2013-03-12
+## [0.1.0] - 2013-03-12
 ### Added
   * bib2tpl updated to v2 with additional modifications (see changelog in
     bib2tpl folder).
@@ -32,6 +33,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     now in most cases.
   * Added/updated administrative files: COPYING, etc.
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.0...HEAD
-[1.0.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...v1.1.0
+[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v1.0.0
