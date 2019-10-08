@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.0] - 2019-10-08
 ### Changed
   * changed version number and changelog format for project (the existing changelog
     details are potentially incomplete.
@@ -33,5 +35,7 @@ _Versions beyond this point do not exist within the Git History!_
     now in most cases.
   * Added/updated administrative files: COPYING, etc.
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v1.0.0
+[Unreleased]: https://github.com/SacBase/publistf/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/SacBase/publistf/releases/tag/1.0.0
+[0.1.1]: #
+[0.1.0]: #
