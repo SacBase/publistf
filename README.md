@@ -23,7 +23,9 @@ on how to install plugins in DokuWiki.
 ### Copyright and License
 
 Copyright (C) 2010      Raphael Reitzig <code@verrech.net>
+
 Copyright (C) 2013      Jorge Juan <jjchico@gmail.com>
+
 Copyright (C) 2016-2019 Hans-Nikolai Viessmann <hans AT viess.mn>
 
 See COPYING and file headers for license info.
