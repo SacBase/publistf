@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2019-10-10
+### Fixed
+  * added missing LaTeX tilde characters (thanks rrfeup!)
+
 ## [1.1.0] - 2019-10-08
 ### Added
   * extended sanitizer to include more 'tilda' characters
@@ -42,7 +46,8 @@ _Versions beyond this point do not exist within the Git History!_
     now in most cases.
   * Added/updated administrative files: COPYING, etc.
 
-[Unreleased]: https://github.com/SacBase/publistf/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/SacBase/publistf/compare/1.1.1...HEAD
+[1.1.1]: https://github.com/SacBase/publistf/compare/1.1.0..1.1.1
 [1.1.0]: https://github.com/SacBase/publistf/compare/1.0.0..1.1.0
 [1.0.0]: https://github.com/SacBase/publistf/releases/tag/1.0.0
 [0.1.1]: #
