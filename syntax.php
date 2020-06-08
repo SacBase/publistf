@@ -1,10 +1,10 @@
 <?php
 /**
- * DokuWiki Plugin publist (Syntax Component)
+ * DokuWiki Plugin publistf (Syntax Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author  Raphael Reitzig <code@verrech.net>
- * @author  Hans-Nikolai Viessmann <hv15@hw.ac.uk>
+ * @author  Hans-Nikolai Viessmann <hans@viess.mn>
  */
 
 // must be run within Dokuwiki
@@ -33,14 +33,14 @@ class syntax_plugin_publistf extends DokuWiki_Syntax_Plugin {
         $this->Lexer->addSpecialPattern('\[publist\|.+?\]',$mode,'plugin_publistf');
     }
 
-    function handle($match, $state, $pos, &$handler){
+    function handle($match, $state, $pos, $handler){
         $data = array();
 
         // Partition properly
         $matches = array();
         $pattern = '/\[publist(?:\|(page|file|url):(.+?))(?:\|(wiki|html):(page|file|url):(.+?))(?:\|(.+?(?:\|.+?)*))?\]/';
         if ( 0 === preg_match($pattern, $match, $matches) ) {
-            $data['error'] = 'Not valid publist syntax: '.$match;
+            $data['error'] = 'Not valid publistf syntax: '.$match;
         }
         else {
             $data['bibtex'] = array('type' => $matches[1], 'ref' => $matches[2]);
@@ -90,7 +90,7 @@ class syntax_plugin_publistf extends DokuWiki_Syntax_Plugin {
         return $data;
     }
 
-    function render($mode, &$renderer, $data) {
+    function render($mode, $renderer, $data) {
         if($mode != 'xhtml') return false;
 
         if ( empty($data['error']) ) {

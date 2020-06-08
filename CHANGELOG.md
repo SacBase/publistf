@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.2] - 2020-06-08
+### Changed
+  * removed pass-by-reference on `handle` and `render` function calls; this is inline
+    with changes to Dokuwiki starting with version "Hogfather" RC2
+
 ## [1.1.1] - 2019-10-10
 ### Fixed
   * added missing LaTeX tilde characters (thanks rrfeup!)
@@ -46,7 +51,8 @@ _Versions beyond this point do not exist within the Git History!_
     now in most cases.
   * Added/updated administrative files: COPYING, etc.
 
-[Unreleased]: https://github.com/SacBase/publistf/compare/1.1.1...HEAD
+[Unreleased]: https://github.com/SacBase/publistf/compare/1.1.2...HEAD
+[1.1.2]: https://github.com/SacBase/publistf/compare/1.1.1..1.1.2
 [1.1.1]: https://github.com/SacBase/publistf/compare/1.1.0..1.1.1
 [1.1.0]: https://github.com/SacBase/publistf/compare/1.0.0..1.1.0
 [1.0.0]: https://github.com/SacBase/publistf/releases/tag/1.0.0
