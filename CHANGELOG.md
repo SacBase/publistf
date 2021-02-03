@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.3] - 2021-02-03
+### Added
+  * user configuration for setting cache on or off
+
+### Changed
+  * fix handle/renderer signature; missing `Doku_Handler`, etc. attributes
+
 ## [1.1.2] - 2020-06-08
 ### Changed
   * removed pass-by-reference on `handle` and `render` function calls; this is inline

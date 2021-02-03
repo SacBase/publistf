@@ -1,6 +1,10 @@
 publistf Plugin for DokuWiki
 ============================
 
+NOTE: This plugin build on the bib2tpl which has not been support since 2013,
+I am looking at [bibtexbrowser](https://github.com/monperrus/bibtexbrowser)
+as a possible replacement for parsing and generating output of Bibtex.
+
 Includes the content of BibTeX files in DokuWiki pages in a flexible way.
 
 All documentation for this plugin can be found at
@@ -26,6 +30,6 @@ Copyright (C) 2010      Raphael Reitzig <code@verrech.net>
 
 Copyright (C) 2013      Jorge Juan <jjchico@gmail.com>
 
-Copyright (C) 2016-2019 Hans-Nikolai Viessmann <hans AT viess.mn>
+Copyright (C) 2016-2021 Hans-Nikolai Viessmann <hans AT viess.mn>
 
 See COPYING and file headers for license info.
