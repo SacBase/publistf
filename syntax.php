@@ -139,8 +139,9 @@ class syntax_plugin_publistf extends DokuWiki_Syntax_Plugin {
             $renderer->doc .= $data['error'];
         }
 
-        # We should not do this... especially for large publists
-        #$renderer->info['cache'] = false;
+        /* user settable */
+        // activate caching of results
+        $renderer->info['cache'] = $this->getConf('cache');
 
         return true;
     }
